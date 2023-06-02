@@ -1,4 +1,4 @@
-public class maintence {
+public class maintnence {
 
     int vehicle_id;
 
@@ -8,10 +8,10 @@ public class maintence {
 
     int odo;
 
-    int price;
+    Float price;
 
 
-    public maintence(int vid, String dte, String dsc, int od, int prce){
+    public maintnence(int vid, String dte, String dsc, int od, Float prce){
         vehicle_id = vid;
         date = dte;
         desc = dsc;
@@ -35,7 +35,7 @@ public class maintence {
         return odo;
     }
 
-    public int getPrice() {
+    public Float getPrice() {
         return price;
     }
 
@@ -55,8 +55,11 @@ public class maintence {
         this.odo = odo;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(Float price) {
         this.price = price;
     }
     
+    public String toString(){
+        return date + " " + desc + " " + odo + " $" + price;
+    }
 }
